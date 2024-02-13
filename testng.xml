@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SampleSuite" >
+	<test name="ModuleOneTest">
+		<classes>
+			<class name="testScripts.SampleOneTest"/>
+		</classes>
+	</test>
+</suite>
+
+		
+	
+	
+	<!--
+<groups>
+	<run>
+		<include name="feature1"/>
+		<include name="feature2"/> 	
+	    //exclude is also available
+	</run>
+</groups> -->
+
+
+<!--
+  <test thread-count="5" name="ModuleTest">
+	  <parameter name="browser" value="chrome"/>
+	  
+	  -->
+	  
+	  
+	  <!--
+	  <groups>
+	<define name="SmokeTest">
+		<include name="feature1"/>
+	</define>
+	<define name="RegressionTest">
+		<include name="feature2"/>
+	</define>
+	<run>
+		<include name="RegressionTest"/>
+	</run>
+</groups>
+-->
+
+<!--
+    <classes>
+	<class name="groupScript.FeatureSample"></class>
+	<class name="groupScript.GroupSample"></class>
+      <class name="testScripts.GoogleSearchTest"/>
+      <class name="testScripts.DropdownTest"/>
+      <class name="testScripts.MouseOver"/>
+      <class name="testScripts.MouseHoverSample"/>
+      <class name="testScripts.WindowParentChild"/>
+      <class name="testScripts.JSExecTest"/>
+      <class name="testScripts.LoginPageTest"/>
+      <class name="testScripts.AlertTypes"/>
+      <class name="testScripts.WebTableTest"/>
+      <class name="testScripts.ScreenShotSample"/>
+      <class name="testScripts.IframesSample"/>
+      <class name="testScripts.Jan30LambaTestBlog"/>
+      <class name="testScripts.Jan31StudentRegistrationPage"/>
+      <class name="testScripts.FileDownload"/>
+      <class name="testScripts.AutoCompleteSample"/>
+      <class name="testScripts.FileUploadTest"/>
+      <class name="testScripts.PageLoadTest"/>
+      <class name="testScripts.HideImageTest"/>
+      <class name="testScripts.WindowsPopup"/>
+      <class name="testScripts.ChkRadioTest"/>
+      <class name="testScripts.Jan30AutomationBookStores"/>
+      <class name="testScripts.Jan30SeleniumEasyDemo"/>
+      <class name="testScripts.ExpWaitTest"/>
+      <class name="testScripts.MouseSingleDoubleMultipleClick"/>
+    </classes> 
+  </test>  ModuleTest -->
+<!--</suite> Suite -->
+<!-- TestSuite -> Tests ->Classes ->Test Methods -->

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ModuleTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testScripts.JSExecTest">
+        <methods>
+          <include name="jsSample"/>
+        </methods>
+      </class> <!-- testScripts.JSExecTest -->
+      <class name="testScripts.ExpWaitTest">
+        <methods>
+          <include name="explicitSample"/>
+        </methods>
+      </class> <!-- testScripts.ExpWaitTest -->
+      <class name="testScripts.WindowsPopup">
+        <methods>
+          <include name="windowSample"/>
+        </methods>
+      </class> <!-- testScripts.WindowsPopup -->
+      <class name="testScripts.ChkRadioTest">
+        <methods>
+          <include name="CheckBoxRadioButton"/>
+        </methods>
+      </class> <!-- testScripts.ChkRadioTest -->
+      <class name="testScripts.PageLoadTest">
+        <methods>
+          <include name="pageLoadTest"/>
+        </methods>
+      </class> <!-- testScripts.PageLoadTest -->
+      <class name="testScripts.Jan31StudentRegistrationPage">
+        <methods>
+          <include name="diffFunctionsOfForm"/>
+        </methods>
+      </class> <!-- testScripts.Jan31StudentRegistrationPage -->
+      <class name="testScripts.Jan30SeleniumEasyDemo">
+        <methods>
+          <include name="SeleniumDemoSample"/>
+        </methods>
+      </class> <!-- testScripts.Jan30SeleniumEasyDemo -->
+      <class name="testScripts.WindowParentChild">
+        <methods>
+          <include name="windowFumctionsCloseQuit"/>
+        </methods>
+      </class> <!-- testScripts.WindowParentChild -->
+    </classes>
+  </test> <!-- ModuleTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
