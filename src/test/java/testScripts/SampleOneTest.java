@@ -75,6 +75,7 @@ public class SampleOneTest {
 	  WebElement srcBox =driver.findElement(By.id("APjFqb"));
 	  srcBox.sendKeys("Selenium Tutorial");
 	  Assert.assertEquals(driver.getTitle(), "Google");
+	  System.out.println("Selenium Test");
   }
   
   @AfterMethod
