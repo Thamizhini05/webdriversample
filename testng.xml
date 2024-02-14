@@ -3,7 +3,8 @@
 <suite name="SampleSuite" >
 	<test name="ModuleOneTest">
 		<classes>
-			<class name="testScripts.SampleOneTest"/>
+			<class name="testScripts.WebtableTest"/>
+			
 			
 		</classes>
 	</test>
