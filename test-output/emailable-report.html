@@ -8,11 +8,83 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">362</td><td></td><td></td></tr>
+<tr><th colspan="8">SampleSuite</th></tr>
+<tr><td><a href="#t0">ModuleOneTest</a></td><td class="num">0</td><td class="num attn">1</td><td class="num attn">3</td><td class="num attn">1</td><td class="num">29,440</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testScripts.DbEmployeetable</td><td><a href="#m0">test</a></td><td rowspan="1">1707721618850</td><td rowspan="1">8</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SampleSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ModuleOneTest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">testScripts.SampleOneTest</td><td><a href="#m0">teardown</a></td><td rowspan="1">1707905571876</td><td rowspan="1">35</td></tr><tr><th colspan="4">ModuleOneTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testScripts.SampleOneTest</td><td><a href="#m1">searchJavaTest</a></td><td rowspan="1">1707905566120</td><td rowspan="1">5752</td></tr><tr><th colspan="4">ModuleOneTest &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="3">testScripts.SampleOneTest</td><td><a href="#m2">finishExtent</a></td><td rowspan="1">1707905571948</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">setup</a></td><td rowspan="1">1707905571920</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m4">teardown</a></td><td rowspan="1">1707905571942</td><td rowspan="1">0</td></tr><tr><th colspan="4">ModuleOneTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">testScripts.SampleOneTest</td><td><a href="#m5">searchSeleniumTest</a></td><td rowspan="1">1707905571932</td><td rowspan="1">0</td></tr><tr><th colspan="4">ModuleOneTest &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="3">testScripts.SampleOneTest</td><td><a href="#m6">searchJavaTest</a></td><td rowspan="3">1707905547333</td><td rowspan="3">2935</td></tr><tr class="retriedeven"><td><a href="#m7">searchJavaTest</a></td></tr><tr class="retriedeven"><td><a href="#m8">searchJavaTest</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">testScripts.DbEmployeetable#test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ModuleOneTest</h2><h3 id="m0">testScripts.SampleOneTest#teardown</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=searchJavaTest status=FAILURE method=SampleOneTest.searchJavaTest()[pri:0, instance:testScripts.SampleOneTest@8519cb4] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.161)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [99458bf3a137c2daf323bfa368a61236, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\THAMIZ~1.ATH\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62548}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62548/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 99458bf3a137c2daf323bfa368a61236
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:330)
+	at commonUtlis.Utility.getScreenshotPath(Utility.java:14)
+	at testScripts.SampleOneTest.teardown(SampleOneTest.java:93)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testScripts.SampleOneTest#searchJavaTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [Google Page] but found [Google],
+	expected [Google] but found [Java Tutorial - Google Search]
+	at testScripts.SampleOneTest.searchJavaTest(SampleOneTest.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testScripts.SampleOneTest#finishExtent</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testScripts.SampleOneTest#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testScripts.SampleOneTest#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testScripts.SampleOneTest#searchSeleniumTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.161)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [99458bf3a137c2daf323bfa368a61236, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\THAMIZ~1.ATH\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62548}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62548/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 99458bf3a137c2daf323bfa368a61236
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:330)
+	at commonUtlis.Utility.getScreenshotPath(Utility.java:14)
+	at testScripts.SampleOneTest.teardown(SampleOneTest.java:93)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testScripts.SampleOneTest#searchJavaTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [Google Page] but found [Google],
+	expected [Google] but found [Java Tutorial - Google Search]
+	at testScripts.SampleOneTest.searchJavaTest(SampleOneTest.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testScripts.SampleOneTest#searchJavaTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [Google Page] but found [Google],
+	expected [Google] but found [Java Tutorial - Google Search]
+	at testScripts.SampleOneTest.searchJavaTest(SampleOneTest.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testScripts.SampleOneTest#searchJavaTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [Google Page] but found [Google],
+	expected [Google] but found [Java Tutorial - Google Search]
+	at testScripts.SampleOneTest.searchJavaTest(SampleOneTest.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
