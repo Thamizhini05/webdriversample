@@ -27,6 +27,9 @@ public class WebTableTest {
 	  
 //	  String strSalary1=driver.findElement(By.xpath("\n"+"//tr[text()='B. Wagner']//following-sibling::td[5]")).getText();
 //	  System.out.println(strSalary1);
+	  
+	  String strLocation=driver.findElement(By.xpath("\n"+"//td[text()='Wagner']//following-sibling::td[2]")).getText();
+	  System.out.println("Location....." +strLocation);
 	 
 	  List<WebElement> count=driver.findElements(By.xpath("//td[contains(text(),'San Francisco')]//preceding-sibling::td[2]"));
 	  System.out.println("Number of items..."+count.size());
